@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using Photon.Pun;
+using Unity.XR.CoreUtils;
 
 public class NetworkPlayer : MonoBehaviour
 {
@@ -30,16 +31,18 @@ public class NetworkPlayer : MonoBehaviour
     public bool isPlayer = false;
     void Start()
     {
-        XRRig rig = FindObjectOfType<XRRig>();
+        XROrigin rig = FindObjectOfType<XROrigin>();
         photonView = GetComponent<PhotonView>();
         headRig = rig.transform.Find("Camera Offset/Main Camera");
         leftHandRig = rig.transform.Find("Camera Offset/LeftHand Controller");
         rightHandRig = rig.transform.Find("Camera Offset/RightHand Controller");
 
-        if(photonView.IsMine)
-        foreach (var item in GetComponentsInChildren<Renderer>())
+        if (photonView.IsMine)
         {
-            item.enabled = false;
+            foreach (var item in GetComponentsInChildren<Renderer>())
+            {
+                item.enabled = false;
+            }
         }
     }
 
