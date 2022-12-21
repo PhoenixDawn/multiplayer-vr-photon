@@ -4,35 +4,44 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
+[System.Serializable]
+public class DefaultRoom
+{
+    public string Name;
+    public int sceneIndex;
+    public int maxPlayer;
+}
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Before");
-        ConnectToServer();
-        Debug.Log("After");
-    }
 
-    void ConnectToServer()
+    [SerializeField]
+    private GameObject roomUi;
+
+    [SerializeField]
+    private List<DefaultRoom> defaultRooms;
+    
+
+    public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Try connect to server...");
     }
 
+    // After connected, it joins master
     public override void OnConnectedToMaster()
     {
+        Debug.Log("Connecting to server...");
         base.OnConnectedToMaster();
-        Debug.Log("I am connected!");
+        PhotonNetwork.JoinLobby();
+    }
 
-
-        RoomOptions ro = new RoomOptions();
-        ro.MaxPlayers = 5;
-        ro.IsVisible = true;
-        ro.IsOpen = true;
-
-
-        PhotonNetwork.JoinOrCreateRoom("Room 1", ro, TypedLobby.Default);
+    // From master go to lobby (Scene 0)
+    public override void OnJoinedLobby()
+    {
+        base.OnJoinedLobby();
+        Debug.Log("Joined the lobby");
+        roomUi.SetActive(true);
     }
 
     public override void OnJoinedRoom()
@@ -45,5 +54,26 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         base.OnPlayerEnteredRoom(newPlayer);
         Debug.Log("New player Joined your room");
+    }
+
+    // Pick a room
+    public void InitializeRoom(int defaultRoomIndex)
+    {
+        DefaultRoom roomSettings = defaultRooms[defaultRoomIndex];
+
+        Debug.Log("Connected to server!");
+        base.OnConnectedToMaster();
+
+        // Load Scene
+        PhotonNetwork.LoadLevel(roomSettings.sceneIndex);
+
+        // Create room
+        RoomOptions ro = new RoomOptions();
+        ro.MaxPlayers = (byte)roomSettings.maxPlayer;
+        ro.IsVisible = true;
+        ro.IsOpen = true;
+
+
+        PhotonNetwork.JoinOrCreateRoom(roomSettings.Name, ro, TypedLobby.Default);
     }
 }
