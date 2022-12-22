@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class DefaultRoom
@@ -73,7 +74,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ro.IsVisible = true;
         ro.IsOpen = true;
 
-
         PhotonNetwork.JoinOrCreateRoom(roomSettings.Name, ro, TypedLobby.Default);
+    }
+
+    public void Disconnect()
+    {
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene(0);
     }
 }
