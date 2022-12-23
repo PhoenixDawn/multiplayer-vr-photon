@@ -21,8 +21,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     [SerializeField]
     private List<DefaultRoom> defaultRooms;
-    
 
+    private void Update()
+    {
+        
+    }
     public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
