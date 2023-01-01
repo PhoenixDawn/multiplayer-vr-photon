@@ -7,20 +7,21 @@ public class SpawnFarm : MonoBehaviour
     public GameObject farm;
 
     public GameObject table;
-    // Start is called before the first frame update
     void Awake()
     {
         //farm = Instantiate(farm);
         if (ES3.KeyExists("Farm"))
         {
+            Debug.Log("Farm Found Loading...");
             farm = (GameObject)ES3.Load("Farm");
         }
         else
         {
+            Debug.Log("Farm NOT Found ");
             farm = Instantiate(farm);
         }
         farm.transform.position = table.transform.position;
-        farm.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        farm.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class SpawnFarm : MonoBehaviour
     {
         farm.transform.localScale = new Vector3(1, 1, 1);
         ES3.Save("Farm", farm);
-        farm.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+        farm.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
     }
 
     private void OnApplicationQuit()
