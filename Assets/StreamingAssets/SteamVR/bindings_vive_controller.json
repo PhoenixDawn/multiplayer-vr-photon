@@ -2,143 +2,134 @@
   "bindings": {
     "/actions/buggy": {
       "chords": [],
-      "haptics": [],
       "poses": [],
-      "skeleton": [],
-      "sources": []
+      "haptics": [],
+      "sources": [
+        {
+          "path": "/user/hand/left/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "pull": {
+              "output": "/actions/buggy/in/throttle"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trigger",
+          "mode": "trigger",
+          "parameters": {},
+          "inputs": {
+            "pull": {
+              "output": "/actions/buggy/in/throttle"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/buggy/in/brake"
+            },
+            "position": {
+              "output": "/actions/buggy/in/steering"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/buggy/in/brake"
+            },
+            "position": {
+              "output": "/actions/buggy/in/steering"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/left/input/application_menu",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/buggy/in/reset"
+            }
+          }
+        },
+        {
+          "path": "/user/hand/right/input/application_menu",
+          "mode": "button",
+          "parameters": {},
+          "inputs": {
+            "click": {
+              "output": "/actions/buggy/in/reset"
+            }
+          }
+        }
+      ],
+      "skeleton": []
     },
     "/actions/default": {
       "chords": [],
-      "haptics": [],
       "poses": [],
-      "skeleton": [],
-      "sources": []
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
     },
     "/actions/platformer": {
       "chords": [],
-      "haptics": [],
       "poses": [],
-      "skeleton": [],
-      "sources": []
-    },
-    "/actions/vrif": {
-      "haptics": [
-        {
-          "output": "/actions/vrif/out/haptic",
-          "path": "/user/hand/left/output/haptic"
-        },
-        {
-          "output": "/actions/vrif/out/haptic",
-          "path": "/user/hand/right/output/haptic"
-        }
-      ],
+      "haptics": [],
       "sources": [
         {
-          "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/leftgrip"
-            }
-          },
+          "path": "/user/hand/left/input/trackpad",
           "mode": "button",
-          "path": "/user/hand/left/input/grip"
-        },
-        {
+          "parameters": {},
           "inputs": {
             "click": {
-              "output": "/actions/vrif/in/back"
+              "output": "/actions/platformer/in/jump"
             }
-          },
+          }
+        },
+        {
+          "path": "/user/hand/right/input/trackpad",
           "mode": "button",
-          "path": "/user/hand/left/input/application_menu"
-        },
-        {
-          "inputs": {
-            "pull": {
-              "output": "/actions/vrif/in/lefttrigger"
-            }
-          },
-          "mode": "trigger",
-          "path": "/user/hand/left/input/trigger"
-        },
-        {
+          "parameters": {},
           "inputs": {
             "click": {
-              "output": "/actions/vrif/in/leftthumbstickdown"
-            },
-            "position": {
-              "output": "/actions/vrif/in/leftthumbstickaxis"
-            },
-            "touch": {
-              "output": "/actions/vrif/in/leftthumbsticknear"
+              "output": "/actions/platformer/in/jump"
             }
-          },
+          }
+        },
+        {
+          "path": "/user/hand/left/input/trackpad",
           "mode": "trackpad",
-          "path": "/user/hand/left/input/trackpad"
-        },
-        {
+          "parameters": {},
           "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/start"
-            }
-          },
-          "mode": "button",
-          "path": "/user/hand/left/input/system"
-        },
-        {
-          "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/rightgrip"
-            }
-          },
-          "mode": "button",
-          "path": "/user/hand/right/input/grip"
-        },
-        {
-          "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/back"
-            }
-          },
-          "mode": "button",
-          "path": "/user/hand/right/input/application_menu"
-        },
-        {
-          "inputs": {
-            "pull": {
-              "output": "/actions/vrif/in/righttrigger"
-            }
-          },
-          "mode": "trigger",
-          "path": "/user/hand/right/input/trigger"
-        },
-        {
-          "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/rightthumbstickdown"
-            },
             "position": {
-              "output": "/actions/vrif/in/rightthumbstickaxis"
-            },
-            "touch": {
-              "output": "/actions/vrif/in/rightthumbsticknear"
+              "output": "/actions/platformer/in/move"
             }
-          },
-          "mode": "trackpad",
-          "path": "/user/hand/right/input/trackpad"
+          }
         },
         {
+          "path": "/user/hand/right/input/trackpad",
+          "mode": "trackpad",
+          "parameters": {},
           "inputs": {
-            "click": {
-              "output": "/actions/vrif/in/start"
+            "position": {
+              "output": "/actions/platformer/in/move"
             }
-          },
-          "mode": "button",
-          "path": "/user/hand/right/input/system"
+          }
         }
-      ]
+      ],
+      "skeleton": []
     }
   },
-  "category": "steamvr_input",
   "controller_type": "vive_controller",
   "description": "",
   "name": "vive_controller"

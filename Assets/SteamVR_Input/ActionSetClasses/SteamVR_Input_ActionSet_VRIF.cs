@@ -17,147 +17,43 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_VRIF : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Single LeftGrip
+        public virtual SteamVR_Action_Boolean InteractUI
         {
             get
             {
-                return SteamVR_Actions.vRIF_LeftGrip;
+                return SteamVR_Actions.vRIF_InteractUI;
             }
         }
         
-        public virtual SteamVR_Action_Single RightGrip
+        public virtual SteamVR_Action_Boolean Teleport
         {
             get
             {
-                return SteamVR_Actions.vRIF_RightGrip;
+                return SteamVR_Actions.vRIF_Teleport;
             }
         }
         
-        public virtual SteamVR_Action_Boolean AButton
+        public virtual SteamVR_Action_Boolean GrabPinch
         {
             get
             {
-                return SteamVR_Actions.vRIF_AButton;
+                return SteamVR_Actions.vRIF_GrabPinch;
             }
         }
         
-        public virtual SteamVR_Action_Boolean BButton
+        public virtual SteamVR_Action_Boolean GrabGrip
         {
             get
             {
-                return SteamVR_Actions.vRIF_BButton;
+                return SteamVR_Actions.vRIF_GrabGrip;
             }
         }
         
-        public virtual SteamVR_Action_Boolean XButton
+        public virtual SteamVR_Action_Pose Pose
         {
             get
             {
-                return SteamVR_Actions.vRIF_XButton;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean YButton
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_YButton;
-            }
-        }
-        
-        public virtual SteamVR_Action_Single LeftTrigger
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_LeftTrigger;
-            }
-        }
-        
-        public virtual SteamVR_Action_Single RightTrigger
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_RightTrigger;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean LeftTriggerNear
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_LeftTriggerNear;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean RightTriggerNear
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_RightTriggerNear;
-            }
-        }
-        
-        public virtual SteamVR_Action_Vector2 LeftThumbstickAxis
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_LeftThumbstickAxis;
-            }
-        }
-        
-        public virtual SteamVR_Action_Vector2 RightThumbstickAxis
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_RightThumbstickAxis;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean LeftThumbstickNear
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_LeftThumbstickNear;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean RightThumbstickNear
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_RightThumbstickNear;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean LeftThumbstickDown
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_LeftThumbstickDown;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean RightThumbstickDown
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_RightThumbstickDown;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean Start
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_Start;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean Back
-        {
-            get
-            {
-                return SteamVR_Actions.vRIF_Back;
+                return SteamVR_Actions.vRIF_Pose;
             }
         }
         
@@ -174,6 +70,38 @@ namespace Valve.VR
             get
             {
                 return SteamVR_Actions.vRIF_SkeletonRightHand;
+            }
+        }
+        
+        public virtual SteamVR_Action_Single Squeeze
+        {
+            get
+            {
+                return SteamVR_Actions.vRIF_Squeeze;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean HeadsetOnHead
+        {
+            get
+            {
+                return SteamVR_Actions.vRIF_HeadsetOnHead;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean SnapTurnLeft
+        {
+            get
+            {
+                return SteamVR_Actions.vRIF_SnapTurnLeft;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean SnapTurnRight
+        {
+            get
+            {
+                return SteamVR_Actions.vRIF_SnapTurnRight;
             }
         }
         

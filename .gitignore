@@ -1,3 +1,4 @@
+[Aa]ssets/**
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -11,6 +12,7 @@
 # Visual Studio cache directory
 .vs/
 .vscode/
+.vsconfig
 
 # Gradle cache directory
 .gradle/
@@ -51,8 +53,32 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Steam VR
-[Aa]ssets/SteamVR
-[Aa]ssets/SteamVR_Resources
-[Aa]ssets/SteamVRAssets
-/Assets/Oculus/
+# Standard folders
+![Aa]ssets/Animations
+![Aa]ssets/Animations/**
+![Aa]ssets/Models
+![Aa]ssets/Models/**
+![Aa]ssets/Prefabs
+![Aa]ssets/Prefabs/**
+![Aa]ssets/Materials
+![Aa]ssets/Materials/**
+![Aa]ssets/Scenes
+![Aa]ssets/Scenes/**
+![Aa]ssets/Scripts
+![Aa]ssets/Scripts/**
+![Aa]ssets/Plugins
+![Aa]ssets/StreamingAssets
+
+# Asset Store dependency sharing
+![Aa]ssets/Photon
+![Aa]ssets/Photon/**
+![Aa]ssets/BNG Framework
+![Aa]ssets/BNG Framework/**
+![Aa]ssets/StreamingAssets/SteamVR
+![Aa]ssets/StreamingAssets/SteamVR/**
+![Aa]ssets/SteamVR_Input
+![Aa]ssets/SteamVR_Input/**
+![Aa]ssets/Easy Save 3
+![Aa]ssets/Easy Save 3/**
+![Aa]ssets/Plugins/Easy Save 3
+![Aa]ssets/Plugins/Easy Save 3/**

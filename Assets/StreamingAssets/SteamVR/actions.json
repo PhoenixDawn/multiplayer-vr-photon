@@ -1,86 +1,29 @@
 {
   "actions": [
     {
-      "name": "/actions/VRIF/in/LeftGrip",
-      "type": "vector1"
-    },
-    {
-      "name": "/actions/VRIF/in/RightGrip",
-      "type": "vector1"
-    },
-    {
-      "name": "/actions/VRIF/in/AButton",
+      "name": "/actions/VRIF/in/InteractUI",
       "type": "boolean"
     },
     {
-      "name": "/actions/VRIF/in/BButton",
+      "name": "/actions/VRIF/in/Teleport",
       "type": "boolean"
     },
     {
-      "name": "/actions/VRIF/in/XButton",
+      "name": "/actions/VRIF/in/GrabPinch",
       "type": "boolean"
     },
     {
-      "name": "/actions/VRIF/in/YButton",
+      "name": "/actions/VRIF/in/GrabGrip",
       "type": "boolean"
     },
     {
-      "name": "/actions/VRIF/in/LeftTrigger",
-      "type": "vector1"
-    },
-    {
-      "name": "/actions/VRIF/in/RightTrigger",
-      "type": "vector1"
-    },
-    {
-      "name": "/actions/VRIF/in/LeftTriggerNear",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/VRIF/in/RightTriggerNear",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/VRIF/in/LeftThumbstickAxis",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/VRIF/in/RightThumbstickAxis",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/VRIF/in/LeftThumbstickNear",
-      "type": "boolean",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/VRIF/in/RightThumbstickNear",
-      "type": "boolean",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/VRIF/in/LeftThumbstickDown",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/VRIF/in/RightThumbstickDown",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/VRIF/in/Start",
-      "type": "boolean",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/VRIF/in/Back",
-      "type": "boolean",
-      "requirement": "optional"
+      "name": "/actions/VRIF/in/Pose",
+      "type": "pose"
     },
     {
       "name": "/actions/VRIF/in/SkeletonLeftHand",
       "type": "skeleton",
-      "skeleton": "/skeleton/hand/left",
-      "requirement": "suggested"
+      "skeleton": "/skeleton/hand/left"
     },
     {
       "name": "/actions/VRIF/in/SkeletonRightHand",
@@ -88,14 +31,74 @@
       "skeleton": "/skeleton/hand/right"
     },
     {
+      "name": "/actions/VRIF/in/Squeeze",
+      "type": "vector1",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/VRIF/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/VRIF/in/SnapTurnLeft",
+      "type": "boolean",
+      "requirement": "suggested"
+    },
+    {
+      "name": "/actions/VRIF/in/SnapTurnRight",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/VRIF/out/Haptic",
       "type": "vibration"
+    },
+    {
+      "name": "/actions/platformer/in/Move",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/platformer/in/Jump",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/buggy/in/Steering",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/buggy/in/Throttle",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/buggy/in/Brake",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/buggy/in/Reset",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/mixedreality/in/ExternalCamera",
+      "type": "pose",
+      "requirement": "optional"
     }
   ],
   "action_sets": [
     {
       "name": "/actions/VRIF",
       "usage": "leftright"
+    },
+    {
+      "name": "/actions/platformer",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/buggy",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/mixedreality",
+      "usage": "single"
     }
   ],
   "default_bindings": [
@@ -118,6 +121,10 @@
     {
       "controller_type": "vive_cosmos_controller",
       "binding_url": "bindings_vive_cosmos_controller.json"
+    },
+    {
+      "controller_type": "logitech_stylus",
+      "binding_url": "bindings_logitech_stylus.json"
     },
     {
       "controller_type": "vive_cosmos",
@@ -150,7 +157,8 @@
   ],
   "localization": [
     {
-      "language_tag": "en_US"
+      "language_tag": "en_US",
+      "/actions/platformer/in/Jump": "Jump"
     }
   ]
 }
