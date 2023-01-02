@@ -32,7 +32,39 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - AssistantCoreSDKEditor
+    - AssistantCoreSDKRuntime
     - BNGHandPoseID
+    - Facebook.Wit.Conduit
+    - Facebook.Wit.Conduit.Editor
+    - Facebook.Wit.Dictation
+    - Facebook.Wit.Dictation.Editor
+    - Facebook.Wit.Editor
+    - Facebook.Wit.TTS
+    - Facebook.Wit.TTS.Editor
+    - Facebook.Wit.TTS.Samples
+    - Facebook.WitAI
+    - LitJson
+    - Oculus.AudioManager
+    - Oculus.AudioManager.Audio.Editor
+    - Oculus.AudioManager.Utils.Editor
+    - Oculus.Interaction
+    - Oculus.Interaction.Editor
+    - Oculus.Interaction.InterfaceSupport
+    - Oculus.Interaction.OVR
+    - Oculus.Interaction.OVR.Editor
+    - Oculus.Interaction.OVR.Samples
+    - Oculus.Interaction.Samples.Editor
+    - Oculus.LipSync
+    - Oculus.LipSync.Editor
+    - Oculus.Platform
+    - Oculus.Platform.Editor
+    - Oculus.Spatializer
+    - Oculus.Spatializer.Editor
+    - Oculus.Voice.Demo
+    - Oculus.VR
+    - Oculus.VR.Editor
+    - Oculus.VR.Scripts.Editor
     - PhotonChat
     - PhotonRealtime
     - PhotonUnityNetworking
@@ -48,6 +80,10 @@ MonoBehaviour:
     - SteamVR_Editor
     - SteamVR_Input_Editor
     - SteamVR_Windows_EditorHelper
+    - VoiceSDK.Dictation.Editor
+    - VoiceSDK.Dictation.Runtime
+    - VoiceSDK.Editor
+    - VoiceSDK.Runtime
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
