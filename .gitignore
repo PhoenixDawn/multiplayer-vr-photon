@@ -56,12 +56,8 @@ crashlytics-build.properties
 # Standard folders
 ![Aa]ssets/Animations
 ![Aa]ssets/Animations/**
-![Aa]ssets/Models
-![Aa]ssets/Models/**
 ![Aa]ssets/Prefabs
 ![Aa]ssets/Prefabs/**
-![Aa]ssets/Materials
-![Aa]ssets/Materials/**
 ![Aa]ssets/Scenes
 ![Aa]ssets/Scenes/**
 ![Aa]ssets/Scripts

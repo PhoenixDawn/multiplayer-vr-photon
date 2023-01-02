@@ -32,7 +32,10 @@ MonoBehaviour:
     assemblyNames:
     - Assembly-CSharp
     - Assembly-CSharp-firstpass
+    - Autodesk.Fbx
+    - Autodesk.Fbx.Editor
     - BNGHandPoseID
+    - FbxBuildTestAssets
     - PhotonChat
     - PhotonRealtime
     - PhotonUnityNetworking
