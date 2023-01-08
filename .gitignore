@@ -64,6 +64,7 @@ crashlytics-build.properties
 ![Aa]ssets/Scripts/**
 ![Aa]ssets/Plugins
 ![Aa]ssets/StreamingAssets
+![Aa]ssets/Editor
 
 # Asset Store dependency sharing
 ![Aa]ssets/Photon

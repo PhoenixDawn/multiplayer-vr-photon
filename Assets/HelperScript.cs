@@ -14,6 +14,6 @@ public class HelperScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        BlockSize = this.transform.localScale;
+        BlockSize = this.transform.lossyScale;
     }
 }
