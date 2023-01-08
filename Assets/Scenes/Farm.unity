@@ -123,6 +123,198 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &521562718
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 831584493912221768, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782938958746545570, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.022
+      objectReference: {fileID: 0}
+    - target: {fileID: 3782938958746545570, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.609
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005525, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_Name
+      value: Farm Land
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2309166782523474371, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 1526949978652465318, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 5094967323308712452, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 8034571397838602540, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 2278860340676975141, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 3070115165025960768, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 8727721381547915746, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 5776822606100978378, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 3300389578502806281, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 1798705141170356844, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 5436528546886973646, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 7081365329318845414, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 4264481293586645726, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 1014828592764853179, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 6742240594896068889, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    - {fileID: 8405192235105731121, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+--- !u!1 &521562719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4751095619356628177, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &521562720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8418448526560054708, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &521562721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2832891116575192854, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &521562722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1036969900204364862, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &521562723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521562719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: a11d7e37-d39f-4f9d-ade8-e2aafd9bc0e2
+--- !u!114 &521562724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521562720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: 3b56b477-571b-4d17-b793-25a7a13d481b
+--- !u!114 &521562725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521562721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: 542f6ac7-19fd-4c63-a8f5-219d79ffe489
+--- !u!114 &521562726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521562722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: cb567cfe-7b73-4fb5-9787-476dc6ce37a8
 --- !u!1 &1023806089
 GameObject:
   m_ObjectHideFlags: 0
