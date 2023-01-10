@@ -178,7 +178,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2374275814567023196}
-  - component: {fileID: 6907469839566420005}
   - component: {fileID: 1044549146983253089}
   - component: {fileID: 5903379908554831785}
   - component: {fileID: 4970275144047196984}
@@ -207,48 +206,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6907469839566420005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2674417275749658154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabId: 3695347873862082249
-  localRefs:
-    _Keys:
-    - {fileID: 2674417275749658154}
-    - {fileID: 2374275814567023196}
-    - {fileID: 6907469839566420005}
-    - {fileID: 1044549146983253089}
-    - {fileID: 5903379908554831785}
-    - {fileID: 4970275144047196984}
-    - {fileID: 11500000, guid: 5cdea428d48e2bb488d33d5f75c39bb9, type: 3}
-    - {fileID: 8886195230946468062}
-    - {fileID: 11500000, guid: 0b7e0940c3283bc418d5a5ea1aa9984d, type: 3}
-    - {fileID: 5278059099825431026}
-    - {fileID: 11500000, guid: 1def126fa7363374182ee35eef654de6, type: 3}
-    - {fileID: 0}
-    - {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    - {fileID: 2100000, guid: d48e31f1d129c3f42b5510c4575edc96, type: 2}
-    - {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 2260801505058276870}
-    - {fileID: 3679341455038131756}
-    - {fileID: 7067125354896497991}
-    - {fileID: 11500000, guid: 49ad1e77ea8f81f4b9c65366b38598ce, type: 3}
-    - {fileID: 2100000, guid: 451615b3b89ce20498e7522f5acd5c00, type: 2}
-    - {fileID: 11500000, guid: 5c6de38f13d6b1443b2c5a5a20ac08d6, type: 3}
-    - {fileID: 5558343100390254304}
-    - {fileID: 4830966141473902776}
-    - {fileID: 3508005553137601179}
-    - {fileID: 2346189277190179409}
-    - {fileID: 8496262828875342515}
-    _Values: 42d77a09e61bb40f765b3be9e809b17555d41cba0755e27c665f027c805c7177fe58746db5fd605e7b267aaa4a8d5a7a34c15a81ca5a234b4f716b7745f2dc5971a52d0d55bf7e66925a94eb3b259d7838020b6263388f3bae36288596a36926108055239f033a1276eb0ed5b70dbd25e22016e7f96b592b93d84a3f4312df1e0479979721fbc618f5cf69e2c5c06d62406ca35f25cf492796138b518c844656ab95f4892842813cf62dc7c4efcc5d577ee6481683d2956769e2609e6dec3d13f6c3be47eed6082b60ef238ada280214
 --- !u!54 &1044549146983253089
 Rigidbody:
   m_ObjectHideFlags: 0

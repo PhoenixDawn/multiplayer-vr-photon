@@ -153,7 +153,7 @@ PrefabInstance:
     - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
@@ -315,55 +315,6 @@ MonoBehaviour:
   - FarmPlot
   objectTypeIndex: 0
   ID: cb567cfe-7b73-4fb5-9787-476dc6ce37a8
---- !u!1 &1023806089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1023806092}
-  - component: {fileID: 1023806091}
-  m_Layer: 0
-  m_Name: TEST
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1023806091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023806089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
-  ID: 1d9a4df4-14bc-4490-8b24-00416d979bb5
---- !u!4 &1023806092
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023806089}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.7679563, y: 4.998837, z: -0.91904324}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1131327526
 PrefabInstance:
   m_ObjectHideFlags: 0
