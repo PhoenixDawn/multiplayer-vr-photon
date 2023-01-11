@@ -428,7 +428,7 @@ MonoBehaviour:
   threadActive: 0
   isMesh: 0
   resetObjects: 0
-  autoGenerate: 1
+  autoGenerate: 0
   scanHeight: 0
   cmdGenerate: 0
   autoGenerateRect:
@@ -442,7 +442,7 @@ MonoBehaviour:
   generateDoneOld: 512051
   isGeneratingHeight: 0
   jobs: 0
-  autoGenerateOld: 1
+  autoGenerateOld: 0
   stackEntry: []
   objectParent: {fileID: 0}
 --- !u!1 &121158460
@@ -616,6 +616,29 @@ MonoBehaviour:
   rtColorPreview: {fileID: 0}
   useConstant: 0
   seed: 0
+--- !u!1 &215625913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4700297187935625722, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &215625915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215625913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: 0dc0558c-a0a5-4740-86ca-e7be4911852d
 --- !u!1 &225228766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,20 +2148,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 831584493912221768, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 3782938958746545570, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    - target: {fileID: 4094944951412726010, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.022
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3782938958746545570, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    - target: {fileID: 4094944951412726010, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4094944951412726010, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.609
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520908132149459368, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520908132149459368, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520908132149459368, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900241140101605543, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900241140101605543, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900241140101605543, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.17
       objectReference: {fileID: 0}
     - target: {fileID: 6868979231534005525, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
@@ -2148,7 +2201,7 @@ PrefabInstance:
     - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6868979231534005609, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
@@ -2200,55 +2253,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2309166782523474371, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 1526949978652465318, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 5094967323308712452, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 8034571397838602540, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 2278860340676975141, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 3070115165025960768, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 8727721381547915746, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 5776822606100978378, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 3300389578502806281, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 1798705141170356844, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 5436528546886973646, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 7081365329318845414, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 4264481293586645726, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 1014828592764853179, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 6742240594896068889, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
-    - {fileID: 8405192235105731121, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
---- !u!1 &521562719 stripped
+--- !u!1 &529873771 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4751095619356628177, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+  m_CorrespondingSourceObject: {fileID: 5132998251982902092, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
     type: 3}
   m_PrefabInstance: {fileID: 521562718}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &521562720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8418448526560054708, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
-    type: 3}
-  m_PrefabInstance: {fileID: 521562718}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &521562721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2832891116575192854, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
-    type: 3}
-  m_PrefabInstance: {fileID: 521562718}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &521562722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1036969900204364862, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
-    type: 3}
-  m_PrefabInstance: {fileID: 521562718}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &521562723
+--- !u!114 &529873773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521562719}
+  m_GameObject: {fileID: 529873771}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
@@ -2258,58 +2277,7 @@ MonoBehaviour:
   - Building
   - FarmPlot
   objectTypeIndex: 0
-  ID: a11d7e37-d39f-4f9d-ade8-e2aafd9bc0e2
---- !u!114 &521562724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521562720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
-  ID: 3b56b477-571b-4d17-b793-25a7a13d481b
---- !u!114 &521562725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521562721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
-  ID: 542f6ac7-19fd-4c63-a8f5-219d79ffe489
---- !u!114 &521562726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521562722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
-  ID: cb567cfe-7b73-4fb5-9787-476dc6ce37a8
+  ID: c588be04-e8ff-4835-9821-087761621434
 --- !u!1 &534683094
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3374,29 @@ MonoBehaviour:
   nodePos: {x: 936.1667, y: 3261.2998}
   seed: 0
   placed: 0
+--- !u!1 &908782769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7818630665539197400, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &908782774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908782769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 1
+  ID: b51274f5-b126-4e45-949f-e7951067f706
 --- !u!1 &951775205
 GameObject:
   m_ObjectHideFlags: 0
@@ -4211,6 +4202,29 @@ MonoBehaviour:
   nodePos: {x: 936.1667, y: 2647.5999}
   seed: 0
   placed: 0
+--- !u!1 &1063702184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 923088885514587857, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1063702186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063702184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: b6febdca-ceca-40b6-9c4f-9bc50633be90
 --- !u!1001 &1131327526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4226,7 +4240,7 @@ PrefabInstance:
     - target: {fileID: 2683195716791022646, guid: f36e8581a14aa05419cfda66d5b4921d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2683195716791022646, guid: f36e8581a14aa05419cfda66d5b4921d,
         type: 3}
@@ -4837,8 +4851,27 @@ Transform:
   m_Children:
   - {fileID: 1603728357}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1273749226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6075421276758893525, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1273749232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273749226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0196714c18071468f5d9ce8067ca79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1 &1325116916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5580,6 +5613,29 @@ MonoBehaviour:
   range: {x: 0, y: 0}
   useConstant: 0
   size: {x: 2048, y: 1000, z: 2048}
+--- !u!1 &1569663731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7676252520104029038, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1569663735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569663731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 1
+  ID: c6c7c7ea-99ae-4b0f-a54c-d307df5e9f38
 --- !u!1 &1603728354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5730,6 +5786,98 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1670342888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.529
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188697966, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7550725800188698000, guid: 4f129b5556bf99748859cbb49fa5fdfb,
+        type: 3}
+      propertyPath: m_Name
+      value: Hammer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f129b5556bf99748859cbb49fa5fdfb, type: 3}
+--- !u!1 &1691181030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2410811437186184947, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+    type: 3}
+  m_PrefabInstance: {fileID: 521562718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1691181035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691181030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTypes:
+  - Building
+  - FarmPlot
+  objectTypeIndex: 0
+  ID: b81339f6-05ca-46f8-b5ad-ff0bed251c41
 --- !u!1 &1702851608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6706,7 +6854,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1892190707
 MonoBehaviour:
@@ -6722,6 +6870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saves:
     Buildings: []
+    FarmPlots: []
   allSaveable: []
 --- !u!1 &1930602100
 GameObject:

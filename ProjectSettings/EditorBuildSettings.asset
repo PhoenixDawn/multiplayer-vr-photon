@@ -43,9 +43,9 @@ EditorBuildSettings:
     WebXR.Settings: {fileID: 11400000, guid: fe9659bb224bb054bb1dbca065d1d318, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 7c0d65f8139523c47a3ac0b1587ccdf6,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22c67776e758be140b1c58f43c2cb6fc,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ad02ca7dacbc38549a57b69b9e4061fc,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 860c0141534786c4d9cf1030a235de07,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f70c032de2a148949a4f0c5b5ef215f5,
       type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 2ae0a4a226e8d9e4aba56d1e2eb3977b,
       type: 2}

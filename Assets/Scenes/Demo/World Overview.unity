@@ -9091,7 +9091,7 @@ MonoBehaviour:
   splatCustomValues: []
   splatCustom: 0
   splatCustomTotal: 0
-  globalListIndex: 0
+  globalListIndex: 1
   placed: 0
 --- !u!1 &274986783
 GameObject:
@@ -19439,7 +19439,7 @@ MonoBehaviour:
   isResourcesFolder: 0
   path: Assets/Materials/Stamps/Canyons/RawFiles/PastelCanyons.raw
   filename: 
-  referenceCount: 1
+  referenceCount: 0
   resolution:
     x: 4096
     y: 4096
@@ -55614,7 +55614,7 @@ MonoBehaviour:
   isResourcesFolder: 0
   path: Assets/Materials/Stamps/Masks/RawFiles/FlattenMask.raw
   filename: 
-  referenceCount: 2
+  referenceCount: 1
   resolution:
     x: 4096
     y: 4096
@@ -57810,7 +57810,7 @@ MonoBehaviour:
   isResourcesFolder: 0
   path: Assets/Materials/Stamps/Canyons/RawFiles/LowCanyons.raw
   filename: 
-  referenceCount: 1
+  referenceCount: 0
   resolution:
     x: 4096
     y: 4096
@@ -69934,6 +69934,16 @@ PrefabInstance:
     - target: {fileID: 2683195716791022646, guid: f36e8581a14aa05419cfda66d5b4921d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095492992128682948, guid: f36e8581a14aa05419cfda66d5b4921d,
+        type: 3}
+      propertyPath: MaxRange
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123834767609328093, guid: f36e8581a14aa05419cfda66d5b4921d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
