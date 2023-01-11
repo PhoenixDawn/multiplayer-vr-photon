@@ -12,11 +12,6 @@ public class Saveable : MonoBehaviour
     [SerializeField]
     public string ID = System.Guid.NewGuid().ToString();
 
-    public void save()
-    {
-
-    }
-
     public void Start()
     {
     }

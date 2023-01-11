@@ -46,7 +46,7 @@ public class SaveManager : MonoBehaviour
     private void load()
     {
         Save loadedSave = JsonUtility.FromJson<Save>(GetSaveData());
-        List<Building> hasLoaded = new List<Building>();
+        List<Building> hasLoadedBuilding = new List<Building>(); // This is added for buildings possibly not needing to be loaded in scene
         foreach(Saveable s in saveables)
         {
             foreach(Building b in loadedSave.Buildings)
@@ -55,25 +55,61 @@ public class SaveManager : MonoBehaviour
                 {
                     s.gameObject.transform.position = b.Position;
                     s.gameObject.transform.rotation = b.Rotation;
-                    hasLoaded.Add(b);
+                    hasLoadedBuilding.Add(b);
+                }
+            }
+
+            foreach (FarmPlot f in loadedSave.FarmPlots)
+            {
+                if (f.ID == s.ID)
+                {
+                    FarmPlotManager fpm = s.transform.GetComponent<FarmPlotManager>();
+                    fpm.farmPlot.IsTilled = f.IsTilled;
+                    fpm.farmPlot.GrowthStage = f.GrowthStage;
+                    fpm.farmPlot.PlantType = f.PlantType;
+                    Debug.Log("I have been run first");
+                    fpm.load();
                 }
             }
         }
-        foreach (Building b in hasLoaded)
+
+        foreach (Building b in hasLoadedBuilding)
         {
             loadedSave.Buildings.Remove(b);
         }
     }
 
-    private void save()
+    private void OnApplicationQuit()
+    {
+        Save();
+    }
+
+    private string GetSaveData()
+    {
+        StreamReader reader = new StreamReader(savePath);
+        string results = reader.ReadToEnd();
+        reader.Close();
+        return results;
+    }
+
+    private void Save()
     {
         saves = new Save();
-        foreach(Saveable save in saveables)
+        foreach (Saveable save in saveables)
         {
-            Debug.Log(save.gameObject.transform.position);
+
+            // Buildings
             if (save.objectTypeIndex == (int)SaveableType.Building)
             {
                 saves.Buildings.Add(new Building(save.gameObject.transform.position, save.gameObject.transform.rotation, save.gameObject.name, save.ID));
+            }
+
+            // Farm Plots
+            if (save.objectTypeIndex == (int)SaveableType.FarmPlot)
+            {
+                FarmPlot fp = save.gameObject.GetComponent<FarmPlotManager>().farmPlot;
+                fp.ID = save.ID;
+                saves.FarmPlots.Add(fp);
             }
         }
         // Deserialize old save and update with new save data if changes
@@ -86,10 +122,12 @@ public class SaveManager : MonoBehaviour
     private Save mergeSaves(Save newSave)
     {
         Save oldSave = JsonUtility.FromJson<Save>(GetSaveData());
+
+        // Buildings
         List<Building> storedBuildings = new List<Building>();
-        foreach(Building building in oldSave.Buildings)
+        foreach (Building building in oldSave.Buildings)
         {
-            foreach(Building b in newSave.Buildings)
+            foreach (Building b in newSave.Buildings)
             {
                 if (b.Id == building.Id)
                 {
@@ -98,24 +136,33 @@ public class SaveManager : MonoBehaviour
                 }
             }
         }
-        foreach(Building b in storedBuildings)
+        foreach (Building b in storedBuildings)
         {
             newSave.Buildings.Remove(b);
         }
         oldSave.Buildings.AddRange(newSave.Buildings);
+
+        // Farm Plots
+        List<FarmPlot> storedFarmplot = new List<FarmPlot>();
+        foreach (FarmPlot farmplot in oldSave.FarmPlots)
+        {
+            foreach (FarmPlot f in newSave.FarmPlots)
+            {
+                if (f.ID == farmplot.ID)
+                {
+                    farmplot.CopyData(f);
+                    storedFarmplot.Add(f);
+                }
+            }
+        }
+        foreach (FarmPlot f in storedFarmplot)
+        {
+            newSave.FarmPlots.Remove(f);
+        }
+        
+        oldSave.FarmPlots.AddRange(newSave.FarmPlots);
+
         return oldSave;
     }
 
-    private void OnApplicationQuit()
-    {
-        save();
-    }
-
-    private string GetSaveData()
-    {
-        StreamReader reader = new StreamReader(savePath);
-        string results = reader.ReadToEnd();
-        reader.Close();
-        return results;
-    }
 }
