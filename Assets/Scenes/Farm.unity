@@ -634,10 +634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
+  PositionRotation: 1
+  FarmManager: 0
   ID: 0dc0558c-a0a5-4740-86ca-e7be4911852d
 --- !u!1 &225228766
 GameObject:
@@ -2148,6 +2146,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 521562726, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
+      propertyPath: PositionRotation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4094944951412726010, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2273,10 +2275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
+  PositionRotation: 1
+  FarmManager: 0
   ID: c588be04-e8ff-4835-9821-087761621434
 --- !u!1 &534683094
 GameObject:
@@ -3392,10 +3392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 1
+  PositionRotation: 0
+  FarmManager: 1
   ID: b51274f5-b126-4e45-949f-e7951067f706
 --- !u!1 &951775205
 GameObject:
@@ -4220,10 +4218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
+  PositionRotation: 1
+  FarmManager: 0
   ID: b6febdca-ceca-40b6-9c4f-9bc50633be90
 --- !u!1001 &1131327526
 PrefabInstance:
@@ -4871,7 +4867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0196714c18071468f5d9ce8067ca79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
 --- !u!1 &1325116916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5631,10 +5626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 1
+  PositionRotation: 0
+  FarmManager: 1
   ID: c6c7c7ea-99ae-4b0f-a54c-d307df5e9f38
 --- !u!1 &1603728354
 GameObject:
@@ -5873,10 +5866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c40ab671d7e894e8abf4886ea4a334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectTypes:
-  - Building
-  - FarmPlot
-  objectTypeIndex: 0
+  PositionRotation: 0
+  FarmManager: 1
   ID: b81339f6-05ca-46f8-b5ad-ff0bed251c41
 --- !u!1 &1702851608
 GameObject:
@@ -6836,7 +6827,7 @@ GameObject:
   - component: {fileID: 1892190707}
   m_Layer: 0
   m_Name: ScriptManager
-  m_TagString: Untagged
+  m_TagString: ScriptManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6868,10 +6859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc82d57a7d51e594ca7e14fb4a854512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saves:
-    Buildings: []
-    FarmPlots: []
-  allSaveable: []
 --- !u!1 &1930602100
 GameObject:
   m_ObjectHideFlags: 0
