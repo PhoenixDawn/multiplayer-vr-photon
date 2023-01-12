@@ -33,11 +33,7 @@ public class FarmPlotManager : MonoBehaviour
         isFarmable[] isFarmable = this.transform.GetComponentsInChildren<isFarmable>(true);
         for (int i = 0; i < farmPlot.IsTilled.Count; i++)
         {
-            if (farmPlot.IsTilled[i] == true)
-            {
-                isFarmable[i].gameObject.SetActive(false);
-                isFarmable[i + 6].gameObject.SetActive(true);
-            }
+            isFarmable[i].setTilled(farmPlot.IsTilled[i]);
         }
     }
 }
