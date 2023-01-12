@@ -13,7 +13,7 @@ public class FarmPlot
 
     public string ID;
 
-    public void generateData()
+    public FarmPlot()
     {
         for (int i = 0; i < 6; i++)
         {
