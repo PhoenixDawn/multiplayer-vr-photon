@@ -428,7 +428,7 @@ MonoBehaviour:
   threadActive: 0
   isMesh: 0
   resetObjects: 0
-  autoGenerate: 0
+  autoGenerate: 1
   scanHeight: 0
   cmdGenerate: 0
   autoGenerateRect:
@@ -442,7 +442,7 @@ MonoBehaviour:
   generateDoneOld: 512051
   isGeneratingHeight: 0
   jobs: 0
-  autoGenerateOld: 0
+  autoGenerateOld: 1
   stackEntry: []
   objectParent: {fileID: 0}
 --- !u!1 &121158460
@@ -1490,12 +1490,12 @@ MonoBehaviour:
   - {fileID: 2067770865}
   refreshRanges: 0
   splatMixBuffer:
-  - select: {x: -0.0005, y: 0.5, z: 1999.9999, w: 4}
+  - select: {x: -0.0005, y: 0.5, z: 1999.9999, w: 0}
     map0: {x: 0, y: 0, z: 0, w: 0}
     map1: {x: 0, y: 0, z: 0, w: 0}
     map2: {x: 0, y: 0, z: 0, w: 0}
     map3: {x: 0, y: 0, z: 0, w: 0}
-  - select: {x: 0.4995, y: 1, z: 1999.9999, w: 3}
+  - select: {x: 0.4995, y: 1, z: 1999.9999, w: 1}
     map0: {x: 0, y: 0, z: 0, w: 0}
     map1: {x: 0, y: 0, z: 0, w: 0}
     map2: {x: 0, y: 0, z: 0, w: 0}
@@ -2069,10 +2069,10 @@ MonoBehaviour:
   previewArea: {fileID: 0}
   area:
     serializedVersion: 2
-    x: -1021.9961
-    y: -1021.9961
-    width: 512
-    height: 512
+    x: -1023.49976
+    y: -1023.49976
+    width: 2048
+    height: 2048
   totalArea:
     serializedVersion: 2
     x: -1024
@@ -2084,25 +2084,25 @@ MonoBehaviour:
     m_Extent: {x: 1024, y: 375, z: 1024}
   layerLevelC: {fileID: 0}
   terrainLayer: {fileID: 983629694}
-  resolution: {x: 512, y: 512}
-  resolutionPM: {x: 4.0078278, y: 4.0078278}
+  resolution: {x: 2048, y: 2048}
+  resolutionPM: {x: 1.0004885, y: 1.0004885}
   resToPreview: {x: 0.125, y: 0.125}
   worldPos: {x: 1000, y: 1000}
   localPos: {x: 64, y: 64}
   pos: {x: 65, y: 65}
   localNPos: {x: 0.5, y: 0.5}
   previewPos: {x: 512, y: 512}
-  snapOffsetUV: {x: -0.0009784698, y: -0.0009784698}
+  snapOffsetUV: {x: -0.00024425983, y: -0.00024425983}
   outputOffsetV2: {x: 0, y: 0}
-  startPos: {x: -1021.9961, y: 0, z: -1021.9961}
+  startPos: {x: -1023.49976, y: 0, z: -1023.49976}
   terrainSize: {x: 2048, y: 750, z: 2048}
   outputOffsetV3: {x: 0, y: 0, z: 0}
   bounds:
     m_Center: {x: 0, y: 375, z: 0}
     m_Extent: {x: 1024, y: 375, z: 1024}
   intResolution:
-    x: 512
-    y: 512
+    x: 2048
+    y: 2048
   heightN: 0.0050750733
   height: 2.5375366
   angle: 0.04931426
@@ -2148,6 +2148,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 521562726, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
       propertyPath: PositionRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 937225468885414426, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950490283116166598, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279755669529787976, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4094944951412726010, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
@@ -2254,6 +2269,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587407199241862509, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8963471934578895484, guid: 5cbad0d5c3861cd48a9b89f60e0fd296,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cbad0d5c3861cd48a9b89f60e0fd296, type: 3}
@@ -2375,8 +2400,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    c: []
-    curveKeys: []
+    c:
+    - {x: -0, y: -0, z: 1, w: -0}
+    curveKeys:
+    - 0
+    - 1
     length: 0
   worldCurve:
     active: 0
@@ -2405,8 +2433,11 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    c: []
-    curveKeys: []
+    c:
+    - {x: -0, y: -0, z: 1, w: -0}
+    curveKeys:
+    - 0
+    - 1
     length: 0
   t: {fileID: 534683095}
   parentOld: {fileID: 0}
@@ -2475,7 +2506,7 @@ MonoBehaviour:
   square: 0
   splatSelectIndex: 0
   noise:
-    mode: 0
+    mode: 1
     cellMode: 0
     frequency: 100
     lacunarity: 2
@@ -2521,7 +2552,7 @@ GameObject:
   - component: {fileID: 596647559}
   - component: {fileID: 596647560}
   m_Layer: 0
-  m_Name: Forest&Leaves
+  m_Name: Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2570,7 +2601,7 @@ MonoBehaviour:
   firstLoad: 1
   preview:
     edit: 0
-    tex: {fileID: 2800000, guid: b6a5b4571804e7f4a86c2391953490b7, type: 3}
+    tex: {fileID: 2800000, guid: bfd675cc0db1d4656b75dc6d6ba91142, type: 3}
   rtDisplay: {fileID: 0}
   rtPreview: {fileID: 0}
   rtPortal: {fileID: 0}
@@ -2765,11 +2796,11 @@ MonoBehaviour:
       m_RotationOrder: 4
     lookAtTarget: {fileID: 0}
     lookAtX: 0
-  color: {r: 1, g: 0, b: 1, a: 1}
+  color: {r: 1, g: 0, b: 0, a: 1}
   texColor: {fileID: 0}
   brightness: 1
   saturation: 1
-  selectIndex: 4
+  selectIndex: 0
   splatCustomValues: []
   splatCustom: 0
   splatCustomTotal: 0
@@ -3163,9 +3194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2.07
-  scrollOffset: {x: 1295.8333, y: -1276.6517}
+  scrollOffset: {x: 1015.4353, y: -1948.8224}
   scrollAdd: {x: 0, y: 0}
-  scale: 0.16252793
+  scale: 0.24718468
   drawDefaultInspector: 0
   debugMode: 0
   hideTerrainGroup: 1
@@ -3176,7 +3207,7 @@ MonoBehaviour:
   showFps: 0
   hideMenuBar: 0
   dustbinT: {fileID: 0}
-  selectionOld: {fileID: 1603728357}
+  selectionOld: {fileID: 0}
   masterTerrain: {fileID: 1603728358}
   hasMasterTerrain: 1
   presetMode: 1
@@ -4543,7 +4574,7 @@ MonoBehaviour:
     - {r: 0.5686275, g: 0.5686275, b: 0.5372549, a: 1}
     splatPrototypes:
     - texture: {fileID: 2800000, guid: bfd675cc0db1d4656b75dc6d6ba91142, type: 3}
-      normalMap: {fileID: 0}
+      normalMap: {fileID: 2800000, guid: b20b7c2f30df42a46827c459ce554829, type: 3}
       normalScale: 1
       maskMap: {fileID: 0}
       diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
@@ -4551,27 +4582,7 @@ MonoBehaviour:
       metallic: 0
       smoothness: 0
       tileOffset: {x: 0, y: 0}
-      tileSize: {x: 14.948905, y: 14.948905}
-    - texture: {fileID: 2800000, guid: 7c6442a1108e8714da08ba13ba0d0c89, type: 3}
-      normalMap: {fileID: 0}
-      normalScale: 1
-      maskMap: {fileID: 0}
-      diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
-      diffRemapMax: {x: 1, y: 1, z: 1, w: 1}
-      metallic: 0
-      smoothness: 0
-      tileOffset: {x: 0, y: 0}
-      tileSize: {x: 14.948905, y: 14.948905}
-    - texture: {fileID: 2800000, guid: 87417352c06c3fd489064da0fc9cb54c, type: 3}
-      normalMap: {fileID: 0}
-      normalScale: 1
-      maskMap: {fileID: 0}
-      diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
-      diffRemapMax: {x: 1, y: 1, z: 1, w: 1}
-      metallic: 0
-      smoothness: 0
-      tileOffset: {x: 0, y: 0}
-      tileSize: {x: 14.948905, y: 14.948905}
+      tileSize: {x: 4, y: 4}
     - texture: {fileID: 2800000, guid: c6e0767b1f8c34890ac245217f4b9731, type: 3}
       normalMap: {fileID: 2800000, guid: d97da6d6c13895e4080568f0c5c6d237, type: 3}
       normalScale: 1
@@ -4581,7 +4592,27 @@ MonoBehaviour:
       metallic: 0
       smoothness: 0
       tileOffset: {x: 0, y: 0}
-      tileSize: {x: 8, y: 8}
+      tileSize: {x: 4, y: 4}
+    - texture: {fileID: 2800000, guid: 440eb36db91ca410f800ff3cfe43572f, type: 3}
+      normalMap: {fileID: 2800000, guid: f518f530657cf4447bf80f133edf007e, type: 3}
+      normalScale: 1
+      maskMap: {fileID: 0}
+      diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
+      diffRemapMax: {x: 1, y: 1, z: 1, w: 1}
+      metallic: 0
+      smoothness: 0
+      tileOffset: {x: 0, y: 0}
+      tileSize: {x: 4, y: 4}
+    - texture: {fileID: 2800000, guid: 87417352c06c3fd489064da0fc9cb54c, type: 3}
+      normalMap: {fileID: 2800000, guid: 78801eedfee31e74285b0b1b6a64b8d2, type: 3}
+      normalScale: 1
+      maskMap: {fileID: 0}
+      diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
+      diffRemapMax: {x: 1, y: 1, z: 1, w: 1}
+      metallic: 0
+      smoothness: 0
+      tileOffset: {x: 0, y: 0}
+      tileSize: {x: 4, y: 4}
     - texture: {fileID: 2800000, guid: b6a5b4571804e7f4a86c2391953490b7, type: 3}
       normalMap: {fileID: 2800000, guid: 11ab13dde39e6ed4ab5f0c81df093b15, type: 3}
       normalScale: 1
@@ -4592,8 +4623,8 @@ MonoBehaviour:
       smoothness: 0
       tileOffset: {x: 0, y: 0}
       tileSize: {x: 2, y: 2}
-    - texture: {fileID: 2800000, guid: 440eb36db91ca410f800ff3cfe43572f, type: 3}
-      normalMap: {fileID: 0}
+    - texture: {fileID: 2800000, guid: 7c6442a1108e8714da08ba13ba0d0c89, type: 3}
+      normalMap: {fileID: 2800000, guid: 51abdeebe2b65944db9673accfbb6164, type: 3}
       normalScale: 1
       maskMap: {fileID: 0}
       diffRemapMin: {x: 0, y: 0, z: 0, w: 0}
@@ -4601,7 +4632,7 @@ MonoBehaviour:
       metallic: 0
       smoothness: 0
       tileOffset: {x: 0, y: 0}
-      tileSize: {x: 14.9489, y: 14.9489}
+      tileSize: {x: 14.948905, y: 14.948905}
     - texture: {fileID: 2800000, guid: 25c6c8c747fbba1459a95ec6e0225f3c, type: 3}
       normalMap: {fileID: 0}
       normalScale: 1
@@ -4729,14 +4760,14 @@ MonoBehaviour:
         type: 3}
       renderMode: 2
     heightmapResolutionList: 3
-    splatmapResolutionList: 2
+    splatmapResolutionList: 0
     basemapResolutionList: 4
     detailResolutionPerPatchList: 1
     size: {x: 2048, y: 750, z: 2048}
     tileX: 0
     tileZ: 0
     heightmapResolution: 513
-    splatmapResolution: 512
+    splatmapResolution: 2048
     basemapResolution: 128
     detailResolution: 512
     detailResolutionPerPatch: 16
@@ -4774,9 +4805,9 @@ MonoBehaviour:
   terrains_scene_active: 1
   terrains_foldout: 1
   sizeTab: 0
-  resolutionsTab: 1
+  resolutionsTab: 0
   settingsTab: 0
-  splatTab: 0
+  splatTab: 1
   treeTab: 0
   grassTab: 0
   resetTab: 0
@@ -6178,7 +6209,7 @@ MonoBehaviour:
   report: 0
   channels: 0101010101
   timeStart:
-  - 1015.5899
+  - 126.45649
   - 0
   - 0
   - 0
@@ -7628,11 +7659,11 @@ MonoBehaviour:
       m_RotationOrder: 4
     lookAtTarget: {fileID: 0}
     lookAtX: 0
-  color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  color: {r: 0, g: 0, b: 1, a: 1}
   texColor: {fileID: 0}
   brightness: 1
   saturation: 1
-  selectIndex: 3
+  selectIndex: 1
   splatCustomValues: []
   splatCustom: 0
   splatCustomTotal: 0
