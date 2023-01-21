@@ -32,6 +32,7 @@ public class Saveable : MonoBehaviour
         {
             FarmPlot savedObject = saveManager.LoadData<FarmPlot>(ID + ".json");
             this.GetComponent<FarmPlotManager>().farmPlot = savedObject;
+            this.GetComponent<FarmPlotManager>().farmPlot.isLoaded = true;
         }
     }
 

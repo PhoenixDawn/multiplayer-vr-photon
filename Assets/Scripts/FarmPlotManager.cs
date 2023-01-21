@@ -30,6 +30,10 @@ public class FarmPlotManager : MonoBehaviour
     public void load()
     {
         // Load Is tilled
+        while (farmPlot == null || farmPlot.isLoaded == false )
+        {
+            return;
+        }
         isFarmable[] isFarmable = this.transform.GetComponentsInChildren<isFarmable>(true);
         for (int i = 0; i < farmPlot.IsTilled.Count; i++)
         {

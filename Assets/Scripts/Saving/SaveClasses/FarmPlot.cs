@@ -13,6 +13,8 @@ public class FarmPlot
 
     public string ID;
 
+    public bool isLoaded = false;
+
     public FarmPlot()
     {
         for (int i = 0; i < 6; i++)
